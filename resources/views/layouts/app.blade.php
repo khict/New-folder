@@ -11,10 +11,12 @@
     <title>@yield('title')</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <!-- <link href="/css/app.css" rel="stylesheet"> -->
 	<link href="/css/master-layout.css" rel="stylesheet">
 	<link href="css/datepicker3.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/item.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -48,27 +50,7 @@
 							
 		</div><!-- /.container-fluid -->
 	</nav>
-        
-	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		
-			<ul class="nav menu">
-				<li class="active"><a href=""><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
-				<li><a href=""><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Menu</a></li>
-				<li><a href=""><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Category</a></li>
-				<li><a href=""><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Content</a></li>				
-			</ul>
-		</div><!--/.sidebar-->
-		
-		<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
-			<div class="row">
-				<ol class="breadcrumb">
-					<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-					<li class="active">@yield('task-name')</li>
-				</ol>
-			</div><!--/.row-->
-			@yield('content')	
-		</div>	<!--/.main-->
-		
+  	@yield('home')
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>
