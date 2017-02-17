@@ -14,7 +14,7 @@
 		  		@yield('menu-item')
 				
 			</div>
-			<div class="col-sm-8 col-md-8 col-lg-10">
+			<div class="col-sm-8 col-md-8 col-lg-10 right-side">
 				@yield('daboard')
 			</div>
 		</div>
