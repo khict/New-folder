@@ -24,3 +24,7 @@ Route::get('create', function () {
 
 //Route::get('/home', 'HomeController@index');
 Route::resource('menu','MenuController');
+//position form 
+Route::get('position', function(){
+	return view('form-input-data.tb_position');
+});
