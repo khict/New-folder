@@ -1,6 +1,7 @@
 #item-button{
 	background-color: bisque;
 	height: 50px;
+	margin-bottom: 5px;
 }
 .button-layout{
 	margin-left: 50px;
@@ -15,4 +16,12 @@
 }
 .right-side{
 	margin-top: 10px;
+}
+.title-function{
+	background-color: #aebde0;
+	height: 37px;
+}
+.title-function .name{
+	margin-left: 50px;
+	margin-top: -15px;
 }

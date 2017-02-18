@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Menu;
 
 class MenuController extends Controller
 {
@@ -34,7 +35,13 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $menu = new Menu();
+       if(isset($request['save'])){
+       	$menu->MnuName = $request['menu-name'];
+       	$menu->MnuDesc = $request['menu-desc'];
+       	echo $request['menu-name'];
+       }
+       
     }
 
     /**
